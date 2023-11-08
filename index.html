@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="">
+
+        <div class="controle-form">
+            <label for="codigo">Código:</label>
+            <input type="number" id="codigo" value="6546846" readonly>
+        </div>
+
+        <div class="controle-form">
+            <label for="dataCadastro">Data de Cadastro:</label>
+            <input type="date" id="dataCadastro">
+        </div>
+
+        <div class="controle-form">
+            <label for="horaCadastro">Hora de Cadastro:</label>
+            <input type="time" id="horaCadastro">
+        </div>
+
+        <div class="controle-form">
+            <label for="dataHoraCadastro">Data e Hora de Cadastro:</label>
+            <input type="datetime-local" id="dataHoraCadastro">
+        </div>
+
+        <div class="controle-form">
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor">
+        </div>
+
+        <div class="controle-form">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+            <input type="checkbox" id="mostraSenha">
+            <label for="mostraSenha">Mostrar senha</label>
+        </div>
+
+        <div class="controle-form">
+            <label for="desabilitado">Desabilitado:</label>
+            <input type="text" id="desabilitado" disabled>
+        </div>
+
+        <div class="controle-form">
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo">
+        </div>
+
+        <div class="controle-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" value="João Marcos" autofocus required>
+        </div>
+
+        <div class="controle-form">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" maxlength="14" placeholder="ex.: 999.999.999-99">
+        </div>
+
+        <div class="controle-form">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" value="email@dominio.com" required>
+        </div>
+
+        <div class="controle-form">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="0" max="999">
+        </div>
+
+        <div class="controle-form">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" min="0" max="3" step="0.01">
+        </div>
+
+        <div class="controle-form">
+            <label for="peso">Peso:</label>
+            <input type="number" id="peso" min="0" max="999" step="0.1">
+        </div>
+
+        <div class="controle-form">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento">
+        </div>
+
+        <input type="hidden" id="chaveSecreta" value="asd9f8a7s0d9f870as9d87g7">
+
+        <div class="botoes">
+            <!-- <input type="image" src="./enviar.png" alt="Enviar" height="30px"> -->
+            <!-- <button type="button"><img src="./enviar.png" alt="Enviar" height="30px"></button> -->
+
+            <button type="submit">Confirmar</button>
+            <button type="reset">Limpar</button>
+            <button type="button" disabled>Desabilitado</button>
+        </div>
+
+    </form>
+</body>
+</html>
