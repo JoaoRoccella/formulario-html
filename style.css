@@ -1,3 +1,7 @@
+.controle-form {
+    margin: 20px 0;
+}
+
 button[type="submit"],
 button[type="button"] {
     background-color: #34cc8b;

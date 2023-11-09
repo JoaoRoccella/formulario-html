@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario HTML</title>
+    <title>Formulário HTML</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <form action="">
+
+        <div class="controle-form">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="100" step="25">
+        </div>
+
+        <fieldset>
+            <legend>Localidade:</legend>
+
+            <label for="pais">País:</label>
+            <select id="pais">
+                <option value="0">Afeganistão</option>
+                <option value="1">Argentina</option>
+                <option value="2" selected>Brasil</option>
+                <option value="3">Canadá</option>
+            </select>
+    
+            <div class="controle-form">
+                <label for="selectUF">UF:</label>
+                <input list="uf" value="SP" id="selectUF">
+            </div>
+        </fieldset>
+
+        <div class="controle-form">
+
+            <fieldset>
+                <legend>Turno:</legend>
+
+                <input type="radio" name="turno" id="manha">
+                <label for="manha">Manhã</label>
+    
+                <input type="radio" name="turno" id="tarde">
+                <label for="tarde">Tarde</label>
+    
+                <input type="radio" name="turno" id="noite">
+                <label for="noite">Noite</label>
+            </fieldset>
+
+        </div>
+
+        <datalist id="uf">
+            <option value="AP">Amapá</option>
+            <option value="CE">Ceará</option>
+            <option value="SP">São Paulo</option>
+            <option value="TO">Tocantins</option>
+        </datalist>
 
         <div class="controle-form">
             <label for="codigo">Codigo:</label>
@@ -57,6 +103,11 @@
         <div class="controle-form">
             <label for="horaCadastro">Hora de cadastro:</label>
             <input type="time" id="horaCadastro">
+        </div>
+
+        <div class="controle-form">
+            <label for="dataHoraCadastro">Data e Hora de Cadastro:</label>
+            <input type="datetime-local" id="dataHoraCadastro">
         </div>
 
         <div class="controle-form">
